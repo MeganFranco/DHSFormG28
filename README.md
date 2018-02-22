@@ -5,7 +5,7 @@
 ### Team Members
 
 1.  James Caple
-1.
+2.  Kamal Dhiman
 1.
 1.
 
