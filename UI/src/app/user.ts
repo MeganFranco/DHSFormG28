@@ -7,6 +7,11 @@ export class User {
         public last_name: string,
         public role_name: string,
         public authenticated: boolean,
-        public jwt: string
+        public jwt: string,
+        public roles: string[] = [
+          'Applicant',
+          'Representative',
+          'QA',
+        ]
     ) { }
 }

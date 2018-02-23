@@ -11,7 +11,7 @@ export class CreateAccountService {
   constructor(private http: HttpClient, private router: Router) { }
 
   createUserAccount(user) {
-
+    console.log(user)
     console.log('Trying to Authenticate User -> ' + JSON.stringify(user));
 
     const req = this.http.post(this.accountURL, {
@@ -19,7 +19,8 @@ export class CreateAccountService {
       first_name: user.first_name,
       last_name: user.last_name,
       password: user.password,
-      email: user.email
+      email: user.email,
+      role: user.role,
     });
 
     return req;

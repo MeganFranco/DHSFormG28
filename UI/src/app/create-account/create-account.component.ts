@@ -12,6 +12,7 @@ import { User } from '../user';
 })
 export class CreateAccountComponent implements OnInit {
 
+
   public loading = false;
   user = new User('', '', '', '', '', '', false, '');
   password1 = '';
